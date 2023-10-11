@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./boat.css">
+</head>
+<body>
+     <div class="boat">
+        <h3>
+            Boat Ride Bill Automation
+        </h3>
+        <form action="" onsubmit="bookride()">
+            <table>
+                <tbody>
+                    <!-- name -->
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="na" placeholder="Enter your name" required></td>
+                    </tr>
+                    <!-- ph no -->
+                    <tr>
+                        <!-- use tel for ph no -->
+                        <td>Phone number</td>
+                        <td><input type="tel" id="ph" placeholder="Phone number" required></td>
+                    </tr>
+                    <!-- email -->
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email" id="em"></td>
+                    </tr>
+                    <!-- no of persons -->
+                    <tr>
+                        <td>Number of Persons</td>
+                        <td><input type="text" id="nop" placeholder="Number of Persons"></td>
+                    </tr>
+                    <!-- boat type -->
+                    <tr>
+                        <td>Boat Type</td>
+                        <td>
+                            <select name="" id="bt">
+                                <option value='{"seat": 2,"charges": 240}'>2 Seater Boat</option>
+                                <option value='{"seat" : 4, "charges" : 260 }'>4 Seater Boat</option>
+                                <option value='{ "seat" : 8, "charges" : 560}'>8 Seater Boat</option>
+                                <option value='{ "seat" : 15, "charges" : 990}'>15 Seater Boat</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- travel duration -->
+                    <tr>
+                        <td>Travel duration in Hours</td>
+                        <td>
+                            <input type="number" id="hr">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                       <button type="submit" value="" >Submit</button>
+                    </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <p id="answer"></p>
+        </form>
+     </div>
+     <script src="./boat.js"></script>
+</body>
+</html>
